@@ -2,14 +2,18 @@
 import yaml # pip install pyyaml
 from datetime import datetime
 
-
 import global_defs as gdf
 
 from cfg_task_list import CfgTaskList
 from cfg_task import CfgTask
 
+
+log = gdf.log
+
+# ---------------------- KEYS----------------------------------------
 TASK_LIST_KEY = 'task_list'
 ID_KEY = 'ID'
+
 
 # simply reads the yaml and produces a dictionary
 def parse_config_yaml(config_file_path):
@@ -18,7 +22,6 @@ def parse_config_yaml(config_file_path):
         yaml_loaded = yaml.safe_load(file)
 
     return yaml_loaded
-
 
 
 def parse_config(config_file_path):

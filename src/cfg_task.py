@@ -1,5 +1,11 @@
 
 
+import global_defs as gdf
+
+
+log = gdf.log
+
+
 class CfgTask():
     
     def __init__(self, id):

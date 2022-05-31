@@ -1,4 +1,8 @@
 
+import global_defs as gdf
+
+
+log = gdf.log
 
 class CfgTaskList():
     
