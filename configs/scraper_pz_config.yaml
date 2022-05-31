@@ -1,0 +1,39 @@
+task_list:
+    - task:
+            ID: concorsi scadono in settimana
+            table:
+                host: concorsi.it
+                table_url: nc/settimana
+                next_table_page_selector:
+                    ID: dummy
+                    title_regex: Pagina Successiva
+                    url_regex: .*/regione/lazio/page/.*
+                    id_regex: dummy
+                    class_regex: dummy
+                    testo_regex: dummy
+                entry_cont_include_filter:
+                    regexes_vertical:
+                        dummmy_desrc_name1: regex_value
+                        dummmy_desrc_name2: regex_value
+                entry_html_include_filter:
+                    ID: dummy
+                entry_cont_exclude_filter:
+                    ID: dummy
+                entry_html_exclude_filter:
+                    ID: dummy
+                table_selector: '#datagrid > table'  # TableSelectCSS()
+                entry_selector: 'tr' #   EntrySelectCSS() {
+                host:
+                    ID: host1
+                    baseHostURI: https://concorsi.it
+                    login:
+                        ID: dummy login ID
+                        loginFormURL: /loginFormURL/hghgh
+                        formAction: post
+                        LoginFormSelector: dummy_login_form_selector
+                        userField: to identify the user input field
+                        passwordField: to identify the password input field
+                        credentials_file_path: external file with credentials
+    - task:
+        id: secondo
+

@@ -1,0 +1,11 @@
+
+should produce simple reports (text or, better, html with links)
+
+should work by deltas, so a little local db will be needed (sqlite) to keep track of what was already  "reported"
+db with very very simple and GENERIC structure used by ALL 
+key will be the url, cleaned up as needed
+Fields
+id: text
+date analyzed
+
+
